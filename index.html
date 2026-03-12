@@ -17,7 +17,7 @@
 <link rel="apple-touch-icon" href="">
 <link rel="shortcut icon" href="">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <!-- Preconnect to external fonts servers for performance optimization -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,13 +26,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" as="style">
 
   <!-- External CSS -->
+  <link rel="stylesheet" href="css/HeaderStyles.css">
   <link rel="stylesheet" href="css/HomepageStyles.css">
 
   <!-- Title (keep it general for the main brand name) -->
-  <title>Home</title>
+  <title>Portfolio</title>
 
   <!-- External JavaScript -->
-  <script defer src="js/script.js"></script>
+  <script defer src="js/HeaderScript.js"></script>
+  <script defer src="js/HomepageScript.js"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -44,25 +46,148 @@
 </div>
 
       <li class="nav-item active">
-        <a class="navigation" href="#">Home</a>
+        <a class="navigation" href="#Top">Home</a>
       </li>
 
       <li class="nav-item">
-        <a class="navigation" href="#">My Work</a>
+        <a class="navigation" href="#Projects">My Work</a>
       </li>
 
       <li class="nav-item">
-        <a class="navigation" href="#">Contact</a>
+        <a class="navigation" href="#ContactSection">Contact</a>
       </li>
     </ul>
   </nav>
 </header>
 
 <main>
-    <div style="width: 50vw ; align-content: center;">
-        <h1 style="justify-self: center; align-content: center; color: gray;">What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h1>
+   <section class="hero" id="Top">
+    <div class="Hero-Text">
+  <h1>Hi, I'm Arion Martha</h1>
+  <p id="hero-p">Full-Stack WebDeveloper</p>
+  <p>2nd-year Student Software engineer.</p>
+  </div>
+  <div class="hero-cta">
+  <a href="#skills" class="cta">Explore my work</a>
+  </div>
+</section>
+
+<section class="skills reveal" id="skills">
+    <h2>Skills</h2>
+  <div class="skills-track">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />  
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg" />  
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" />   
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" />      
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+  </div>
+</section>
+
+<section class="projects reveal" id="Projects">
+
+     <h2>Projects</h2>
+  <div class="cards">
+    <article
+      class="project-card"
+      data-title="Nail salon Webapp"
+      data-description="A full-stack Webapp with a course and blog system built from scratch with its own admin panel"
+      data-tech="HTML • CSS • JavaScript • PhP • SQL"
+      data-image="images/homepage factorynails.png"
+      data-demo="https://factorynailsacademy.nl/"
+      data-code="https://github.com/AcidKirby/FactoryNails"
+    >
+      <img src="images/homepage factorynails.png" alt="Homepage factorynails">
+      <div class="project-overlay">
+        <h3>Factorynails Webapp</h3>
+        <p>A full-stack Webapp</p>
+      </div>
+    </article>
+
+    <article
+      class="project-card"
+      data-title="Roblox Escape room game"
+      data-description="A 5 minute escape room game with ICT related puzzles"
+      data-tech="Luau • Roblox Studio"
+      data-image="images/escaperoom.png"
+      data-demo="https://www.roblox.com/games/97808748607456/Escape-Code-Black"
+      data-code="#"
+    >
+      <img src="images/escaperoom.png" alt="escape room roblox game">
+      <div class="project-overlay">
+        <h3>Roblox Escape room game</h3>
+        <p>A 5 minute escape room game</p>
+      </div>
+    </article>
+
+    <article
+      class="project-card"
+      data-title="Mobile app Prototype"
+      data-description="A meeting room app UI/UX design with a working prototype"
+      data-tech="Figma"
+      data-image="images/vergaderroom app.png"
+      data-demo="https://www.figma.com/proto/g7YWpytNKQpS01ATMfcE5u/Vergaderoom-mobile-app?node-id=97-2&t=CtsICD5NjaR6f5Tl-1"
+      data-code="#"
+    >
+      <img src="images/vergaderroom app.png" alt="Preview meeting room mobile app">
+      <div class="project-overlay">
+        <h3>Meeting room mobile app</h3>
+        <p>UI/UX design, working prototype of an app built for booking a meeting room</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+
+    <div class="modal-image-wrap">
+      <img id="modalImage" src="" alt="">
     </div>
+
+    <div class="modal-text">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <span id="modalTech" class="modal-tech"></span>
+
+      <div class="modal-actions">
+        <a id="modalDemo" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a id="modalCode" href="#" target="_blank" rel="noopener noreferrer">View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="Contact reveal" id="ContactSection">
+
+  <h2>Contact</h2>
+
+  <div class="contact-card">
+    <div class="contact-glow"></div>
+
+    <div class="contact-text">
+      <p class="contact-label">Let’s work together</p>
+      <h3>AM It-Solutions</h3>
+      <p class="contact-description">
+        Feel free to reach out for collaborations, projects, or questions.
+      </p>
+    </div>
+
+    <div class="contact-actions">
+      <a class="contact-button primary" href="mailto:marthaitsolutions@gmail.com">
+        marthaitsolutions@gmail.com
+      </a>
+      <span class="contact-tag">Available for projects</span>
+    </div>
+  </div>
+
+</section>
    
 </main>
 </body>
