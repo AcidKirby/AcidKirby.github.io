@@ -34,7 +34,7 @@ function setActiveItem(item) {
 function setActiveSection() {
   if (isClickScrolling) return;
 
-  const viewportCenter = window.innerHeight / 2;
+  const viewportCenter = window.innerHeight / 2.5;
   let closestSection = null;
   let closestDistance = Infinity;
 

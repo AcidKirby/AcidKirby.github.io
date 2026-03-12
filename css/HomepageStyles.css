@@ -50,7 +50,7 @@
 }
 
 .Hero-Text{
-    color: gray;
+   color: #F2F2F2;
     font-size: clamp(2.5rem, 6vw, 5rem);
 
     padding-left: 60px;
@@ -65,7 +65,7 @@
 
 #hero-p{
     width: 50VW;
-    color: white;
+    color: rgba(255,255,255,0.55);
     animation: twist 10s ease-in-out infinite;
 }
 
@@ -91,6 +91,7 @@ section {
   min-height: 90vh;
   padding-top: 100px;
    scroll-margin-top: 100px;
+   padding-bottom: 80px;
 }
 
 .skills-track {
@@ -124,6 +125,7 @@ section {
 .skills h2, .projects h2, .Contact h2{
     font-size: clamp(2.5rem, 6vw, 5rem);
     margin-left: 60px;
+    margin-top: 100px;
     color: white;
 }
 
@@ -136,15 +138,15 @@ section {
 
 .projects {
   width: min(1100px, 92vw);
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 120px 0 80px;
 }
 
 .projects h2 {
-  text-align: center;
   color: rgba(255,255,255,0.95);
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 32px;
+
   text-shadow:
     0 1px 0 rgba(255,255,255,0.15),
     0 8px 24px rgba(0,0,0,0.45);
@@ -495,9 +497,8 @@ body.modal-open {
 
 .contact {
   width: min(1100px, 92vw);
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 120px 0 100px;
-  text-align: center;
 }
 
 .contact h2 {
