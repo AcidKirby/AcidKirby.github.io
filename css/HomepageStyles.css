@@ -25,6 +25,14 @@
   animation-delay: 1s;
 }
 
+.skills-track img:nth-child(7) {
+  animation-delay: 2s;
+}
+
+.skills-track img:nth-child(8) {
+  animation-delay: 3s;
+}
+
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
